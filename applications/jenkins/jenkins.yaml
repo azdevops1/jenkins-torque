@@ -12,6 +12,9 @@ inputs:
 source:
   os_type: linux
   image:
+    docker_image:
+    - name: ubuntu
+      tag: 16.04
     ami:                                                   # AWS Image
       - id: ami-0b33356b362c56df5
         region: us-west-1
@@ -19,9 +22,7 @@ source:
       - id: ami-0817d428a6fb68645
         region: us-east-1
         username: ubuntu
-    docker_image:
-    - name: ubuntu
-      tag: 16.04
+
 
 infrastructure:
   compute:

@@ -19,6 +19,9 @@ source:
       - id: ami-0817d428a6fb68645
         region: us-east-1
         username: ubuntu
+    docker_image:
+    - name: ubuntu
+      tag: 16.04
 
 infrastructure:
   compute:

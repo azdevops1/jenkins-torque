@@ -17,21 +17,26 @@ inputs:
         Open the Settings page and click the Integrations tab. Under the Jenkins
         Pipeline icon, click Connect. In the Connect Torque to your Jenkins Pipeline.
         Copy the automatically generated token.
+      default_value: QvkZ0NI6hUOhTgKS9XqZJUQxpgYmIASqz8JsrW1Ovcw
   - SPACE_NAME:
+      description: >
+        Space Name where Jenkins pipeline will deploy sandbox.
+      default_value: Project-Pivot
 
   - JENKINS_ADMIN_PASS:
       display_style: masked
       description: >
-        Specify password for Jenkins admin user. Default value is 'admin'
-      default_value: admin
+        Specify password for Jenkins admin user. 
 
   - IAM_ROLE:
       description: >
         AWS IAM instance profile role name allowing Jenkins to access S3 bucket
+      default_value: s3acess-profile
 
   - BUCKET_NAME:
       description: >
         This bucket will be used to store build artifacts
+      default_value: chris-aws-workshop
 
 applications:
   - jenkins:

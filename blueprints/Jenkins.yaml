@@ -31,7 +31,7 @@ inputs:
   - IAM_ROLE:
       description: >
         AWS IAM instance profile role name allowing Jenkins to access S3 bucket
-      default_value: s3acess-profile
+      default_value: s3access-profile
 
   - BUCKET_NAME:
       description: >

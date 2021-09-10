@@ -36,7 +36,7 @@ inputs:
   - BUCKET_NAME:
       description: >
         This bucket will be used to store build artifacts
-      default_value: chris-aws-workshop
+      default_value: artifact-repo-promotionapp-alex
 
 applications:
   - jenkins:
